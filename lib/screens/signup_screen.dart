@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../constants/app_colors.dart';
-import '../../constants/regex_constants.dart';
-import '../../constants/app_routes.dart';
-import '../../widgets/custom_textfield.dart';
+import 'package:vantra_app/constants/app_routes.dart';
+import 'package:vantra_app/constants/colors.dart';
+import 'package:vantra_app/constants/regex.dart';
+import 'package:vantra_app/widgets/custom_textformfield.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -47,7 +47,6 @@ class _SignupScreenState extends State<SignupScreen> {
                 ),
                 const SizedBox(height: 16),
 
-                // Email
                 CustomTextField(
                   controller: emailCtrl,
                   hintText: "Email-id",
@@ -102,7 +101,6 @@ class _SignupScreenState extends State<SignupScreen> {
                 ),
                 const SizedBox(height: 16),
 
-                // Go to Login
                 TextButton(
                   onPressed: () {
                     Navigator.pushReplacementNamed(context, AppRoutes.login);
